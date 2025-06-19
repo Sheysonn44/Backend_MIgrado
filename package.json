@@ -17,6 +17,10 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.1"
   },
+  "engines": {
+  "node": "22.14.0"
+  },
+
   "devDependencies": {
     "prisma": "^6.8.2"
   },
