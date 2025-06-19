@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "postinstall": "prisma generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juangamboaabarca/API-Horarios.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/juangamboaabarca/API-Horarios/issues"
+  },
+  "homepage": "https://github.com/juangamboaabarca/API-Horarios#readme",
+  "description": ""
+}
