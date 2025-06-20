@@ -1,5 +1,6 @@
 // This file contains the controller functions for handling teacher-related requests.
-const { PrismaClient } = require('./prisma/generated/client');
+const { PrismaClient } = require('@prisma/client');
+
 const prisma = new PrismaClient();
 const { generateToken } = require('../../auth');
 
