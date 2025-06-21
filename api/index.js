@@ -12,10 +12,11 @@ const teacher = require("../src/routes/teacher.routes")
 app.use(cors());
 
 // Ruta base para utilizar el servicio
-app.get("/api", function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('SERVIDOR SISTEMA');
+app.get("/", function(req, res) {
+  res.status(200).send('SERVIDOR SISTEMA');
 });
 
 app.use("/api/login", login);
 app.use("/api/teacher", teacher);
+
+module.exports = app;
