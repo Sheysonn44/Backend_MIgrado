@@ -93,10 +93,10 @@ exports.deleteTeacher = async (req, res) => {
 
 
 module.exports= {
-  getTeacherById: exports.getTeacherById,
-  getTeacherByPassword: exports.getTeacherByPassword,
-  getAllTeachers: exports.getAllTeachers,
-  createTeacher: exports.createTeacher,
-  updateTeacher: exports.updateTeacher,
-  deleteTeacher: exports.deleteTeacher
+  getTeacherById,
+  getTeacherByPassword,
+  getAllTeachers,
+  createTeacher,
+  updateTeacher ,
+  deleteTeacher 
 };
