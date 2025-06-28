@@ -90,3 +90,13 @@ exports.deleteTeacher = async (req, res) => {
     res.status(400).json({ error: 'Failed to delete teacher' });
   }
 };
+
+
+module.exports= {
+  getTeacherById: exports.getTeacherById,
+  getTeacherByPassword: exports.getTeacherByPassword,
+  getAllTeachers: exports.getAllTeachers,
+  createTeacher: exports.createTeacher,
+  updateTeacher: exports.updateTeacher,
+  deleteTeacher: exports.deleteTeacher
+};
