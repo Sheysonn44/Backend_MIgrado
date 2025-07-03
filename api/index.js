@@ -10,21 +10,21 @@ const teacher = require("../src/routes/teacher.routes")
 
 
 //const allowedOrigins = ['http://localhost:5173', 'http://localhost:5175'];
-const allowedOrigins = ['https://proyecto-languajes-vercel-sheysonn44s-projects.vercel.app', 'http://localhost:5173', 
-           'https://proyecto-languajes-vercel.vercel.app/'
-];
+//const allowedOrigins = ['https://proyecto-languajes-vercel-sheysonn44s-projects.vercel.app', 'http://localhost:5173', 
+//           'https://proyecto-languajes-vercel.vercel.app/'
+//];
 
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('No permitido por CORS'));
-    }
-  },
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  //origin: function(origin, callback) {
+    //if (!origin || allowedOrigins.includes(origin)) {
+      //callback(null, true);
+    //} else {
+      //callback(new Error('No permitido por CORS'));
+    //}
+  //},
+  //credentials: true,
+  //methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  //allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 // Ruta base para utilizar el servicio
