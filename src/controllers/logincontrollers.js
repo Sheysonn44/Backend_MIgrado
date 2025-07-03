@@ -14,7 +14,7 @@ exports.login = async (req, res) => {
     if (!teacher || teacher[0].password !== password) {
       return res.status(401).json({ message: 'Credenciales inválidas' });
     }
-   
+    console.log('Holaaaaa');
     const token = generateToken(1);
     console.log(token)
     res.json({ token });
